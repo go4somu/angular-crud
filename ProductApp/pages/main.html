@@ -1,0 +1,22 @@
+<div ng-controller="listCtrl">
+    <table class="table">
+        <thead>
+          <tr>
+            <th>Description</th>
+            <th>Date</th>
+            <th>Quantity</th>
+            <th>Edit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="product in productList">
+            <td>{{product.description}}</td>
+            <td>{{product.purdate}}</td>
+            <td>{{product.quantity}}</td>
+            <td><button type="button" class="btn btn-info" ng-click="edit(product.id)">Edit</button></td>
+            <td><button type="button" class="btn btn-danger" ng-click="delete(product.id)">Delete</button></td>
+          </tr>
+        </tbody>
+      </table>
+</div>

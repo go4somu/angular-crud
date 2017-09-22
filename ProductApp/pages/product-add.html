@@ -1,0 +1,26 @@
+<div class="container-fluid">
+<hr/>
+    <h3>Add a New Product</h3>
+<hr/>
+<form class="form" ng-controller="addCtrl" ng-submit="submit(f)" name="f">
+    <div class="form-group row">
+        <label for="example-text-input" class="col-2 col-form-label">Description</label>
+        <div class="col-10">
+        <input class="form-control" type="text" ng-model="description">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="example-text-input" class="col-2 col-form-label">Purchase Date</label>
+        <div class="col-10">
+        <input class="form-control" type="text" ng-model="purdate">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="example-text-input" class="col-2 col-form-label">Quantity</label>
+        <div class="col-10">
+        <input class="form-control" type="text" ng-model="quantity">
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
